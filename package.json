@@ -1,0 +1,28 @@
+{
+  "name": "qa1222",
+  "version": "1.0.0",
+  "description": "ultima",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "testc": "test -- --coverage" 
+  },
+  "keywords": [
+    "cicd"
+  ],
+  "author": "Anne Rocha",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "jest-html-reporter": "^3.8.0"
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      ["./node_modules/jest-html-reporter", {
+        "pageTitle": "Test Report"
+      }]
+    ]
+  }
+
+}
